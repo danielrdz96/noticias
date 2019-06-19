@@ -4,6 +4,7 @@ import { RespuestaNoticias } from '../../interfaces/interfaces';
 import { Article } from '../../interfaces/interfaces';
 
 
+
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -12,6 +13,7 @@ import { Article } from '../../interfaces/interfaces';
 export class Tab1Page implements OnInit {
   articulos: Article[] = [];
   constructor(private noticiasService: NoticiasService) {}
+
 
   ngOnInit() {
   this.noticiasService.getNoticias()
