@@ -27,7 +27,7 @@ return this.http.get<T>(query, {headers: this.headers});
   return this.callAPI<RespuestaNoticias>('/top-headlines?country=us');
   }
 
-  getNoticiasByCategory( category: string ) {
-    return this.callAPI<RespuestaNoticias>('/top-headlines?country=us&category=${category}');
+  getNoticiasByCategory( category: string) {
+  return this.callAPI<RespuestaNoticias>('/top-headlines?country=us&category=${category}');
   }
 }
