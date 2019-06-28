@@ -1,9 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
 import { NoticiasService } from '../../services/noticias.service';
 import { RespuestaNoticias } from '../../interfaces/interfaces';
 import { Article } from '../../interfaces/interfaces';
-
-
 
 @Component({
   selector: 'app-tab1',
@@ -11,9 +9,9 @@ import { Article } from '../../interfaces/interfaces';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page implements OnInit {
+
   articulos: Article[] = [];
   constructor(private noticiasService: NoticiasService) {}
-
 
   ngOnInit() {
   this.noticiasService.getNoticias()
